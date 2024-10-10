@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="shortcut icon" type="image/png" href="./img/logo.png">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="./img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+               
+            </ul>
+        </header>
+   
+    <div class="grid-container">
+   
+        <div class="card">
+            <img src="img/img1.png" alt="Coffee 1">
+            <div class="price">R$ 12,00</div>
+            <button onclick="addToCart('Coffee 1', 12.00);changeColor('#017143')">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="card">
+            <img src="img/img2.png" alt="Coffee 2">
+            <div class="price">R$ 15,00</div>
+            <button onclick="addToCart('Coffee 2', 18.00);changeColor('#EB7495');">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card">
+            <img src="img/img3.png" alt="Coffee 3">
+            <div class="price">R$ 18,00</div>
+            <button onclick="addToCart('Coffee 3', 10.00);changeColor('#D752B1');">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Adicione mais cards conforme necessário -->
+        <div class="card">
+            <img src="img/img1.png" alt="Coffee 1">
+            <div class="price">R$ 12,00</div>
+            <button onclick="addToCart('Coffee 1', 12.00);changeColor('#017143')">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="card">
+            <img src="img/img2.png" alt="Coffee 2">
+            <div class="price">R$ 15,00</div>
+            <button onclick="addToCart('Coffee 2', 18.00);changeColor('#EB7495');">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card">
+            <img src="img/img3.png" alt="Coffee 3">
+            <div class="price">R$ 18,00</div>
+            <button onclick="addToCart('Coffee 3', 10.00);changeColor('#D752B1');">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card">
+            <img src="img/img1.png" alt="Coffee 1">
+            <div class="price">R$ 12,00</div>
+            <button onclick="addToCart('Coffee 1', 12.00);changeColor('#017143')">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="card">
+            <img src="img/img2.png" alt="Coffee 2">
+            <div class="price">R$ 15,00</div>
+            <button onclick="addToCart('Coffee 2', 18.00);changeColor('#EB7495');">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card">
+            <img src="img/img3.png" alt="Coffee 3">
+            <div class="price">R$ 18,00</div>
+            <button onclick="addToCart('Coffee 3', 10.00);changeColor('#D752B1');">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card">
+            <img src="img/img1.png" alt="Coffee 1">
+            <div class="price">R$ 12,00</div>
+            <button onclick="addToCart('Coffee 1', 12.00);changeColor('#017143')">Adicionar ao Carrinho</button>
+        </div>
+        
+        <div class="card">
+            <img src="img/img2.png" alt="Coffee 2">
+            <div class="price">R$ 15,00</div>
+            <button onclick="addToCart('Coffee 2', 18.00);changeColor('#EB7495');">Adicionar ao Carrinho</button>
+        </div>
+        <div class="card">
+            <img src="img/img3.png" alt="Coffee 3">
+            <div class="price">R$ 18,00</div>
+            <button onclick="addToCart('Coffee 3', 10.00);changeColor('#D752B1');">Adicionar ao Carrinho</button>
+        </div>
+    </div>
+  
+
+    <div class="bottom-bar" onclick="openModal()">
+        Abrir Carrinho
+    </div>
+
+    <div class="modal">
+        <div class="modal-content">
+            <button class="close-button" onclick="closeModal()">X</button>
+            <h2 style="text-align: center;">Carrinho de Compras</h2>
+            <div class="cart-items">
+                <br>
+                <!-- Itens do carrinho serão adicionados dinamicamente aqui -->
+                <div class="added-to-cart-message hidden"></div>
+            </div>
+            <div class="total">
+                Total: R$ <span id="total-price">0.00</span>
+            </div>
+            <button class="confirm-button" onclick="sendWhatsAppMessage()">Confirmar Pedido</button>
+
+
+
+
+        </div>
+    </div>
+</section>
+    
+    <div class="circulo" id="colorCircle"></div>
+      
+</body>
+
+</html>
+
+<script src="script.js"></script>
